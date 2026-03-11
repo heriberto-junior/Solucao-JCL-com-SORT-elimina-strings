@@ -1,6 +1,6 @@
 # Solucao-JCL-com-SORT-elimina-strings
 
-# Visão geral do job
+## Visão geral do job
 O job executa três etapas encadeadas para produzir um arquivo final contendo:
 
 1 - o cabeçalho original do arquivo de entrada,
@@ -9,7 +9,7 @@ O job executa três etapas encadeadas para produzir um arquivo final contendo:
 
 Para isso, utiliza um dataset temporário intermediário, que primeiro recebe o cabeçalho e depois os registros filtrados e ordenados, e por fim é copiado para o dataset definitivo.
 
-# Etapa 1 — Cópia do cabeçalho para temporário
+## Etapa 1 — Cópia do cabeçalho para temporário
 O STEP 1 do JCL copia apenas as 3 primeiras linhas do arquivo de entrada para um arquivo temporário chamado `&&COPYTMP` utilizando as funções de SORT `COPY` e `STOPAFT=3` que serve para interromper a leitura após exatamente 3 registros. Essas 3 linhas do arquivo de entrada são um cabeçalho que precisam ser mantidas.
 
 ---
