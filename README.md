@@ -3,9 +3,9 @@
 ### Visão geral do job
 O job executa três etapas encadeadas para produzir um arquivo final contendo:
 ```
-1 - o cabeçalho original do arquivo de entrada;  
-2 - os registros úteis (dados de job), sem linhas de status e sem duplicados;  
-3 - os registros ordenados por campos definidos.  
+**1 - o cabeçalho original do arquivo de entrada;**  
+**2 - os registros úteis (dados de job), sem linhas de status e sem duplicados;**  
+**3 - os registros ordenados por campos definidos.**  
 ```
 
 Para isso, utiliza um dataset temporário intermediário, que primeiro recebe o cabeçalho e depois os registros filtrados e ordenados, e por fim é copiado para o dataset definitivo.
